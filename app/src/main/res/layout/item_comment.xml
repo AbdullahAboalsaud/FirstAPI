@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="comment title"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_2sdp"
+            />
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="The body of the comment to the post"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:padding="@dimen/_2sdp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
